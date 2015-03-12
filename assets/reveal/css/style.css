@@ -1,0 +1,19 @@
+/* unvisited link */
+a:link.atr {
+    color: black;
+}
+
+/* visited link */
+a:visited.atr {
+    color: black;
+}
+
+/* mouse over link */
+a:hover.atr {
+    color: black;
+}
+
+/* selected link */
+a:active.atr {
+    color: black;
+}

@@ -49,8 +49,27 @@
 					</p>
 				</section>
 
-				<section data-background="#8892BF">
-					<section data-background-transition="zoom">
+				<section data-background="#8892BF" data-background-transition="zoom">
+
+					<!--
+					<section>
+						<pre>
+							<code>
+								<?php
+									class Programmer
+									{
+										public function __construct()
+										{
+											$this->stuff = $otherStuff;
+										}
+									}
+								?>
+							</code>
+						</pre>
+					</section>
+					-->
+
+					<section>
 						<h2>PHP: Hypertext Preprocessor</h2>
 						<p class="fragment">Suited to web development</p>
 						<p class="fragment">Easy to learn</p>
@@ -71,6 +90,7 @@
 						</ul>
 					</section>
 				</section>
+
 				
 				<section>
 					<section style="font-family: consolas; color: #F26651; font-size: 80px">
@@ -133,9 +153,10 @@
 							Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.
 						</blockquote>
 					</section>
-					
+
+
 					<section>
-						<h2>Our choice: Git</h2>
+						<h2>Our choice: <span style="text-transform: lowercase;">git</span></h2>
 						<p class="fragment">Git is Fast</p>
 						<p class="fragment">Git is Small</p>
 						<p class="fragment">Git is Distributed</p>
@@ -152,7 +173,6 @@
 							<li><a href="https://www.atlassian.com/git/" target="_blank">Atlassian tutorial</a></li>
 							<li>A lot of practice</li>
 						</ul>
-
 					</section>
 					
 				</section>
@@ -183,7 +203,38 @@
 				</section>
 				
 				<section>
-					automated testing: phpunit, (sikuli, selenium?)
+					<section>
+						<h2>Test Automation</h2>
+						A way to make sure that your code <strong>will always</strong> work. 
+					</section>
+
+					<section>
+						<h2>What to test?</h2>
+						<ul>
+							<li>Platform and OS independence</li>
+							<li>Use cases</li>
+							<li>User Interface (browser automation)</li>
+							<li>Heavy load performance</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Unit Testing</h2>
+						<p class="fragment">Automated testing of small units of code</p>
+						<p class="fragment">Locate problems early (TDD in XP and Scrum)</p>
+						<p class="fragment">Simplifies refactoring</p>
+						<p class="fragment">Simplifies integration</p>
+					</section>
+
+					<section>
+						<h2>Testing tools</h2>
+						<ul>
+							<li><a href="http://karma-runner.github.io/0.12/index.html" target="_blank">Karma (test runner - JS)</a></li>
+							<li><a href="http://angular.github.io/protractor/#/" target="_blank">Protractor (e2e - JS)</a></li>
+							<li><a href="https://phpunit.de/" target="_blank">PHPUnit</a></li>
+							<li><a href="http://www.seleniumhq.org/" target="_blank">Selenium</a></li>
+						</ul>
+					</section>
 				</section>
 
 				<section>

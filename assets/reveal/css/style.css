@@ -1,19 +1,39 @@
-/* unvisited link */
+.url {
+	text-transform: none;
+}
+
+.url-black:hover,
+.url-black:active,
+.url-black:visited,
+.url-black:link {
+	color: black;
+}
+
+.url-white:hover,
+.url-white:active,
+.url-white:visited,
+.url-white:link {
+	color: white;
+}
+
+/*
+/* unvisited link /
 a:link.atr {
     color: black;
 }
 
-/* visited link */
+/* visited link /
 a:visited.atr {
     color: black;
 }
 
-/* mouse over link */
+/* mouse over link /
 a:hover.atr {
     color: black;
 }
 
-/* selected link */
+/* selected link /
 a:active.atr {
     color: black;
 }
+*/

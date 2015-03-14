@@ -50,6 +50,25 @@
 				</section>
 
 				<section data-background="#8892BF" data-background-transition="zoom">
+					<section>
+						<pre height="10000"><code data-trim contenteditable>
+&lt;?php
+try {
+  $conn = new \PDO("mysql:host=127.0.0.1;dbname=DragonBallZ",
+  	                        $username, $password);
+} catch (\PDOException $ex) {
+  print "Error!" . $ex->getMessage() ;
+  exit();
+}
+
+$select = "SELECT character_name FROM super_saiyan WHERE power > 9000;";
+$resultSet = $conn->query($select);
+
+foreach ($resultSet as $result) // this should print Goku!
+	print $result['character_name'];
+?>
+						</code></pre>
+					</section>
 
 					<section>
 						<h2>PHP: Hypertext Preprocessor</h2>
@@ -89,6 +108,7 @@
 						<ul>
 							<li><a href="http://foundation.zurb.com/" target="_blank" class="url">Foundation</a></li>
 							<li><a href="http://getbootstrap.com/" target="_blank" class="url">Bootstrap</a></li>
+							<li><a href="http://html5up.net/" target="_blank" class="url">HTML5 UP</a></li>
 							<li><a href="https://html5boilerplate.com/" target="_blank" class="url">HTML5 Boilerplate</a></li>
 							<li><a href="http://getskeleton.com/" target="_blank" class="url">Skeleton</a></li>
 						</ul>

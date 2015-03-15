@@ -19,7 +19,9 @@
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="../assets/reveal/lib/css/zenburn.css">
-		<link rel="stylesheet" href="../assets/reveal/css/style.css">
+		<link rel="stylesheet" href="style.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -54,9 +56,9 @@
 						<pre height="10000"><code data-trim contenteditable>
 &lt;?php
 try {
-  $conn = new \PDO("mysql:host=127.0.0.1;dbname=DragonBallZ",
+  $conn = new PDO("mysql:host=127.0.0.1;dbname=DragonBallZ",
   	                        $username, $password);
-} catch (\PDOException $ex) {
+} catch (PDOException $ex) {
   print "Error!" . $ex->getMessage() ;
   exit();
 }
@@ -65,7 +67,7 @@ $select = "SELECT character_name FROM super_saiyan WHERE power > 9000;";
 $resultSet = $conn->query($select);
 
 foreach ($resultSet as $result) // this should print Goku!
-	print $result['character_name'];
+  print $result['character_name'];
 ?>
 						</code></pre>
 					</section>
@@ -90,6 +92,18 @@ foreach ($resultSet as $result) // this should print Goku!
 							<li><strike><a href="http://www.codeigniter.com/" target="_blank" class="url url-black">CodeIgniter</a></strike></li>
 						</ul>
 					</section>
+
+					<section>
+						<h2 style="text-transform: none">Managing PHP Dependencies with Composer</h2>
+						<pre class="fragment"><code>
+"require": {
+  "vendor/dependency": "version-code",
+  "fzaninotto/faker": "1.4.0"
+}
+						</code></pre>
+						<pre class="fragment"><code>$ composer install</code></pre>
+					</section>
+
 				</section>
 
 				
@@ -99,7 +113,7 @@ foreach ($resultSet as $result) // this should print Goku!
 					</section>
 					
 					<section>
-						<h2><span style="color: #E44D26;">&lt;HTML5/&gt;</span> + <span style="color: #1758A7">{CSS3}</span> + <span style="color: #F8DC3D">JS</span></h2>
+						<h2><span style="color: #E44D26;">&lt;html5/&gt;</span> + <span style="color: #1758A7">{CSS3}</span> + <span style="color: #F8DC3D">JS</span></h2>
 						<img width="500" data-src="../images/real-world-webapp-presentation/5-3-js.png">
 					</section>
 					
@@ -208,7 +222,6 @@ foreach ($resultSet as $result) // this should print Goku!
 							<li>Text Search</li>
 							<li>Filtering</li>
 							<li>Word Stemming</li>
-							<li>Word Stemming</li>
 							<li>Quality Scoring</li>
 							<li>Location-based search</li>
 						</ul>
@@ -222,7 +235,7 @@ foreach ($resultSet as $result) // this should print Goku!
 
 					<section>
 						<h2>Elastic Search</h2>
-						<p class="fragment">Search server built on top of Lucene</p>	
+						<p class="fragment">Search server built on top of Lucene</p>
 						<p class="fragment">Free and Open Source</p>	
 						<p class="fragment">Built in Java == cross-platform</p>	
 						<p class="fragment">JSON-based REST API</p>	
@@ -235,11 +248,14 @@ foreach ($resultSet as $result) // this should print Goku!
 
 					<section>
 						<h2>Solr</h2>
+						<p class="fragment">Also built on top of Lucene</p>
+						<p class="fragment">Also written in Java</p>	
+						<p class="fragment">Extensible through plugins</p>	
 					</section>
 
 					<section>
-						<h2>Solr vs ES</h2>
-						http://solr-vs-elasticsearch.com/
+						<h2 style="text-transform: none;">Solr vs ES</h2>
+						<a href="http://solr-vs-elasticsearch.com/" target="_blank">http://solr-vs-elasticsearch.com/</a>
 					</section>
 				</section>
 
@@ -276,7 +292,8 @@ foreach ($resultSet as $result) // this should print Goku!
 
 
 					<section>
-						<h2>Our choice: <span style="text-transform: lowercase;">git</span></h2>
+						<h2>Our choice: <span style="text-transform: lowercase;">git</span></h2> <!---->
+						<!-- <h2>Our choice: <object type="image/svg+xml" data="git.svg" id="git-logo">Your browser does not support SVG</object></h2> <!---->
 						<p class="fragment">Git is Fast</p>
 						<p class="fragment">Git is Small</p>
 						<p class="fragment">Git is Distributed</p>
@@ -299,7 +316,7 @@ foreach ($resultSet as $result) // this should print Goku!
 				
 				<section data-background="#bdc3c7">
 					<section>
-						<h2>Software Development Methods (SDMs)</h2>
+						<h2>Software Development Methods <span style="text-transform: none;">(SDMs)</span></h2>
 						<img data-src="../images/real-world-webapp-presentation/soft-dev-methods.png">
 					</section>
 					

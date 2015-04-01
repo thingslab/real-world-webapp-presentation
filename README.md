@@ -9,3 +9,6 @@ git clone https://github.com/thingslab/real-world-webapp-presentation.git
 ```
 
 The presentation is at [`presentation/index.html`](https://github.com/thingslab/real-world-webapp-presentation/blob/master/presentation/index.html). You can check the [Reveal.JS repo](https://github.com/hakimel/reveal.js) in order to learn how to add new slides and to modify the existing ones.
+
+### Live
+Check the presentation online [here](http://aziflaj.github.io/real-world-webapp/)
